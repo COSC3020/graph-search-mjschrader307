@@ -106,7 +106,7 @@ function validatePath(graph, path = [], startNode, targetNode) {
 }
 
 function testFxn() {
-  const graphs = Object.values(test); // Get both key and value for helpful error messages
+  const graphs = Object.values(test);
 
   for (let i = 0; i < graphs.length; i++) {
     const graph = graphs[i]["Graph"];
