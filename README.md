@@ -29,3 +29,18 @@ answer, including your reasoning, to this markdown file.
 ## Bonus
 
 Implement and analyze breadth-first search.
+
+---
+
+Answer:
+
+I think the worst-case scenario for this algorithm is if the graph is a linked-list sort of graph, where every recursive call is processing one less node and edge. I also think that in every scenario where more than one node is visited, that is what's happening at every recursive call: one less node and edge are left for further processing. In the worst case, every edge and node are visited once, so the end complexity is $\Theta(|V| + |E|)$
+
+---
+
+I used ChatGPT to help me get started with writing up a test suite for my function; however, I did not really understand what was going on, so I ditched most of it. I referred to old test code to figure out how to import my function, and I put together my own set of test cases and evaluation functions to process things iteratively. There was some small debugging with the test logic that I got help with, too.
+
+**I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.**
